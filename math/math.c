@@ -1,9 +1,8 @@
 //  O3 Ozone Project Lab
-//  Math.c - addition, subtraction, multiplication, division.
+//  math.c - addition, subtraction, multiplication, division.
 //  Created by Hudson Schumaker on 14.08.20.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
-
-const double pi = 3.141592;
+//
 
 // Interger operations
 // ADD, SUB, MUL, DIV, INC, DEC, POW, CUBE
@@ -45,4 +44,66 @@ int pow_int(int x0) {
 
 int cube_int(int x0) {
     return x0 * x0 * x0;
+}
+
+// Long operatations
+// ADD, SUB, MUL, DIV, INC, DEC
+long add_long(long x0, long x1) {
+    return x0 + x1;
+}
+
+long sub_long(long x0, long x1) {
+    return x0 - x1;
+}
+
+long mult_long(long x0, long x1) {
+    return x0 * x1;
+}
+
+long div_long(long x0, long x1) {
+    return x0 / x1;
+}
+
+long inc_long(long x0) {
+    return x0++;
+}
+
+long dec_long(long x0) {
+    return x0--;
+}
+
+// Float operatations
+// ADD, SUB, MUL, DIV
+float add_float(float d0, float d1) {
+    return d0 + d1;
+}
+
+float sub_double(float d0, float d1) {
+    return d0 - d1;
+}
+
+float mult_double(float d0, float d1) {
+    return d0 * d1;
+}
+
+float divd(float d0, float d1) {
+    return d0 / d1;
+}
+
+// Double operations
+// ADD, SUB, MUL, DIV
+double add_double(double d0, double d1) {
+    return d0 + d1;
+}
+
+double sub_double(double d0, double d1) {
+    return d0 - d1;
+}
+
+double mult_double(double d0, double d1) {
+    return d0 * d1;
+}
+
+double divd(double d0, double d1) {
+    return d0 / d1;
 }
