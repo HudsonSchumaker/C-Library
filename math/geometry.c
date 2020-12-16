@@ -1,5 +1,6 @@
 //  O3 Ozone Project Lab
-//  geometry.c
+//  geometry.c - areas, volumes
+//  math.net - reference for formulas
 //  Created by Hudson Schumaker on 16.08.04.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
@@ -55,4 +56,9 @@ double volume_cone(double r, double h) {
 double volume_cylinder(double r, double h) {
     // V = pir²h
     return  pi * (r * r) * h;
+}
+
+double volume_sphere(double r) {
+    // V = 4/3pir³
+    return (((4 / 3) * pi) * (r * r * r));
 }
