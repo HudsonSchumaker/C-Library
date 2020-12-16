@@ -12,5 +12,12 @@ string.c          <br>
 &emsp;left-trim   <br>
 &emsp;right-trim  <br>
 &emsp;trim        <br>
-math.c            <br>  
+math.c            <br>
+&emsp;addition    <br>
+&emsp;subtraction <br>
+&emsp;multiplication<br>
+&emsp;division    <br>
+&emsp;increment   <br>
+&emsp;decrement   <br>
+geometry.c        <br>
 converter.c       <br> 
