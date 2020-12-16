@@ -1,6 +1,6 @@
 //  O3 Ozone Project Lab
 //  geometry.c
-//  Created by Hudson Schumaker on 16.12.20.
+//  Created by Hudson Schumaker on 16.08.04.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
 const double pi = 3.141592;
@@ -21,6 +21,11 @@ double area_triangle(double b, double h) {
     return (b * h) / 2.0;
 }
 
+double area_parallelogram(double b, double h) {
+    // A = bh
+    return b * h;
+}
+
 double area_trapezoid(double b, double B, double h) {
     // A = (B + b)h / 2
     return ((B + b) * h) / 2;
@@ -34,4 +39,20 @@ double area_circle(double r) {
 double area_sphere(double r) {
     // A = 4pir²
     return 4 * pi * (r * r);
+}
+
+// Double volumes
+double volume_cube(double s) {
+    // V = s³
+    return s * s * s;
+}
+
+double volume_cone(double r, double h) {
+    // V = (1/3)pir²h
+    return (((1 / 3) * pi) * (r * r)) * h;
+}
+
+double volume_cylinder(double r, double h) {
+    // V = pir²h
+    return  pi * (r * r) * h;
 }
