@@ -9,6 +9,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
+const char* right_trim(char *str);
 
 void print_string(char *str) {
    printf("%s", str);
@@ -83,24 +84,24 @@ const char* lower_case(char *str) {
 // camelCase
 const char* camel_case(char *str) {
     long len = strlen(str);
-    char srtCapitalLetters[len];
-    srtCapitalLetters[0] = tolower(str[0]);
+    char strCapitalLetters[len];
+    strCapitalLetters[0] = tolower(str[0]);
 
     int i = 1;
     while (str[i]) {
         if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
-            srtCapitalLetters[i] = toupper(str[i]);
+            strCapitalLetters[i] = toupper(str[i]);
         } else {
-            srtCapitalLetters[i] = tolower(str[i]);
+            strCapitalLetters[i] = tolower(str[i]);
         }
         i++;
     }
 
     int writer = 0, reader = 0;
     char strCamel[len];
-    while (srtCapitalLetters[reader]) {
-        if (srtCapitalLetters[reader] != ' ' && srtCapitalLetters[reader] != '_' && srtCapitalLetters[reader] != '-') {
-            strCamel[writer++] = srtCapitalLetters[reader];
+    while (strCapitalLetters[reader]) {
+        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-') {
+            strCamel[writer++] = strCapitalLetters[reader];
         }
         reader++;
     }
@@ -112,44 +113,66 @@ const char* camel_case(char *str) {
 
 // PascalCase
 const char* pascal_case(char *str) {
-    long len = strlen(str);
-    char srtCapitalLetters[len];
-    srtCapitalLetters[0] = toupper(str[0]);
+    long ini_len = strlen(str);
+    char strCapitalLetters[ini_len];
+    strCapitalLetters[0] = toupper(str[0]);
 
     int i = 1;
     while (str[i]) {
         if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
-            srtCapitalLetters[i] = toupper(str[i]);
+            strCapitalLetters[i] = toupper(str[i]);
         } else {
-            srtCapitalLetters[i] = tolower(str[i]);
+            strCapitalLetters[i] = tolower(str[i]);
         }
         i++;
     }
 
     i = 0;
     long remove = 0;
-    while (srtCapitalLetters[i]) {
-        if (srtCapitalLetters[i] == ' ' || srtCapitalLetters[i] == '_' || srtCapitalLetters[i] == '-') {
+    while (strCapitalLetters[i]) {
+        if (strCapitalLetters[i] == ' ' || strCapitalLetters[i] == '_' || strCapitalLetters[i] == '-') {
             remove++;
         }
         i++;
     }
 
-    long size = len - remove;
-    char strPascal[size];
+    long len = ini_len - remove;
+    char strPascal[len];
     int writer = 0, reader = 0;
-    while (srtCapitalLetters[reader]) {
-        if (srtCapitalLetters[reader] != ' ' && srtCapitalLetters[reader] != '_' && srtCapitalLetters[reader] != '-') {
-            if (writer < size) {
-                strPascal[writer++] = srtCapitalLetters[reader];
+    while (strCapitalLetters[reader]) {
+        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-') {
+            if (writer < len) {
+                strPascal[writer++] = strCapitalLetters[reader];
             }
         }
         reader++;
     }
 
     strPascal[writer] = 0;
-    char *buffer = malloc(size);
+    char *buffer = malloc(len);
     strcpy(buffer, strPascal);
+    return buffer;
+}
+
+// Capital Case
+const char* capital_case(char *str) {
+    long len = strlen(str);
+    char strCapitalLetters[len];
+    strCapitalLetters[0] = toupper(str[0]);
+
+    int i = 1;
+    do {
+        if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
+            strCapitalLetters[i] = toupper(str[i]);
+        } else {
+            strCapitalLetters[i] = tolower(str[i]);
+        }
+        i++;
+    } while (i < len+1);
+
+    long new_len = strlen(strCapitalLetters);
+    char *buffer = malloc(new_len);
+    strcpy(buffer, strCapitalLetters);
     return buffer;
 }
 
