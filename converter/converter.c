@@ -23,7 +23,7 @@ const char* float_to_string(float f) {
     int ipart = (int)f;               // extract integer part 
     float fpart = f - (float)ipart;   // extract floating part 
     
-    char istr[12];
+    char istr[8];
     sprintf(istr, "%d", ipart);
     
     if (afterpoint != 0) { 
@@ -31,10 +31,10 @@ const char* float_to_string(float f) {
     }
     
     int fpart_no_dot = fpart;
-    char fstr[12];
+    char fstr[8];
     sprintf(fstr, "%d", fpart_no_dot);
    
-    char *buffer = malloc(24);
+    char *buffer = malloc(16);
     strcpy(buffer, istr);
     strcat(buffer, ".");
     strcat(buffer, fstr);
