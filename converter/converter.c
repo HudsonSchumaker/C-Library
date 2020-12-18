@@ -40,5 +40,28 @@ const char* float_to_string(float f) {
     strcat(buffer, fstr);
     return buffer;
 }
-// double to string
+
+// Double to char array(string)
+const char* double_to_string(double f) {
+    int afterpoint = 6;
+    int ipart = (int)f;               // extract integer part 
+    double dpart = f - (double)ipart;   // extract floating part 
+    
+    char istr[8];
+    sprintf(istr, "%d", ipart);
+    
+    if (afterpoint != 0) { 
+        dpart = dpart * pow(10, afterpoint); 
+    }
+    
+    int dpart_no_dot = dpart;
+    char dstr[8];
+    sprintf(dstr, "%d", dpart_no_dot);
+   
+    char *buffer = malloc(16);
+    strcpy(buffer, istr);
+    strcat(buffer, ".");
+    strcat(buffer, dstr);
+    return buffer;
+}
 
