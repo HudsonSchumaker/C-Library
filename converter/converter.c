@@ -44,8 +44,8 @@ const char* float_to_string(float f) {
 // Double to char array(string)
 const char* double_to_string(double f) {
     int afterpoint = 6;
-    int ipart = (int)f;               // extract integer part 
-    double dpart = f - (double)ipart;   // extract floating part 
+    int ipart = (int)f;                 // extract integer part 
+    double dpart = f - (double)ipart;   // extract double part 
     
     char istr[8];
     sprintf(istr, "%d", ipart);
