@@ -34,4 +34,5 @@ geometry.c           <br>
 converter.c          <br>
 &emsp;integer to char<br>
 &emsp;float to char<br>
+&emsp;double to char<br>
 file.c               <br>
