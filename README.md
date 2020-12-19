@@ -33,4 +33,5 @@ geometry.c           <br>
 &emsp;volume sphere  <br>
 converter.c          <br>
 &emsp;integer to char<br>
+&emsp;float to char<br>
 file.c               <br>
