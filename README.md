@@ -6,6 +6,7 @@ string.c             <br>
 &emsp;lowercase      <br>
 &emsp;camelCase      <br>
 &emsp;PascalCase     <br>
+&emsp;CapitalCase    <br>
 &emsp;snake_case     <br>
 &emsp;kebab-case     <br>
 &emsp;reverse        <br>
