@@ -21,7 +21,7 @@ const char* int_to_string(int i) {
 const char* float_to_string(float f) {
     int afterpoint = 4;
     int ipart = (int)f;               // extract integer part 
-    float fpart = f - (float)ipart;   // extract floating part 
+    float fpart = f - (float)ipart;   // extract float part 
     
     char istr[8];
     sprintf(istr, "%d", ipart);
