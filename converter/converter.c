@@ -42,10 +42,10 @@ const char* float_to_string(float f) {
 }
 
 // Double to char array(string)
-const char* double_to_string(double f) {
+const char* double_to_string(double d) {
     int afterpoint = 6;
-    int ipart = (int)f;                 // extract integer part 
-    double dpart = f - (double)ipart;   // extract double part 
+    int ipart = (int)d;                 // extract integer part 
+    double dpart = d - (double)ipart;   // extract double part 
     
     char istr[8];
     sprintf(istr, "%d", ipart);
