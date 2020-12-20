@@ -66,6 +66,13 @@ const char* double_to_string(double f) {
 }
 
 // Celsius to Fahrenheit
-float celsius_to_fahrenheit(float cel) {
-    return (cel *(9/5)) + 32.0;
+float celsius_to_fahrenheit(float c) {
+    // (0°C × 9/5) + 32 = 32°F
+    return (c *(9/5)) + 32.0;
+}
+
+// Fahrenheit to Celsius
+float fahrenheit_to_celsius(float f) {
+    // (32°F − 32) × 5/9 = 0°C
+    return (f - 32.0) * (5/9);
 }
