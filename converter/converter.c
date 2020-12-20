@@ -55,3 +55,13 @@ float mile_to_km(float m) {
     // km = m * 1.609
     return m * 1.609;
 }
+
+// Knot to Km/h
+float knot_to_km_h(float k) {
+    return k * 1.852;
+}
+
+// Km/h to knot
+float km_h_to_knot(float km) {
+    return km / 1.852;
+}
