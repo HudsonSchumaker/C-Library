@@ -1,7 +1,7 @@
 # C-Library
 Common C useful methods.
 
-string.c             <br>
+# string.c           <br>
 &emsp;UPPERCASE      <br>
 &emsp;lowercase      <br>
 &emsp;camelCase      <br>
@@ -17,14 +17,14 @@ string.c             <br>
 &emsp;integer to char<br>
 &emsp;float to char  <br>
 &emsp;double to char <br>
-math.c               <br>
+# math.c             <br>
 &emsp;addition       <br>
 &emsp;subtraction    <br>
 &emsp;multiplication <br>
 &emsp;division       <br>
 &emsp;increment      <br>
 &emsp;decrement      <br>
-geometry.c           <br>
+# geometry.c         <br>
 &emsp;area square    <br>
 &emsp;area rectangle <br>
 &emsp;area triangle  <br>
@@ -36,7 +36,7 @@ geometry.c           <br>
 &emsp;volume cone    <br>
 &emsp;volume cylinder<br>
 &emsp;volume sphere  <br>
-converter.c          <br>
+# converter.c        <br>
 &emsp;Celsius to Fahrenheit<br>
 &emsp;Fahrenheit to Celsius<br>
 &emsp;Celsius to Kelvin    <br>
@@ -45,4 +45,4 @@ converter.c          <br>
 &emsp;Fahrenheit to Kelvin <br>
 &emsp;Km to Miles          <br>
 &emsp;Miles to Km          <br>
-file.c               <br>
+# file.c                   <br>
