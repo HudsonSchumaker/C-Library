@@ -88,3 +88,15 @@ float kelvin_to_celsius(float k) {
     // 0K − 273.15 = -273,1°C
     return k - 273.15;
 }
+
+// Kelvin to Fahrenheit
+float kelvin_to_fahrenheit(float k) {
+    // (0K − 273.15) × 9/5 + 32 = -459,7°F
+    return ((k - 273.15) * (9/5)) + 32; 
+}
+
+// Fahrenheit to Kelvin
+float fahrenheit_to_kelvin(float f) {
+    // (32°F − 32) × 5/9 + 273.15 = 273,15K
+    return ((f - 32) * (5/9)) + 273.15;
+}
