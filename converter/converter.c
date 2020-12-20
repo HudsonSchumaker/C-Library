@@ -61,7 +61,7 @@ float knot_to_km_h(float k) {
     return k * 1.852;
 }
 
-// Km/h to knot
+// Km/h to Knot
 float km_h_to_knot(float km) {
     return km / 1.852;
 }
