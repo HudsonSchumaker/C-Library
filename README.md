@@ -37,5 +37,12 @@ geometry.c           <br>
 &emsp;volume cylinder<br>
 &emsp;volume sphere  <br>
 converter.c          <br>
-
+&emsp;Celsius to Fahrenheit<br>
+&emsp;Fahrenheit to Celsius<br>
+&emsp;Celsius to Kelvin    <br>
+&emsp;Kelvin to Celsius    <br>
+&emsp;Kelvin to Fahrenheit <br>
+&emsp;Fahrenheit to Kelvin <br>
+&emsp;Km to Miles          <br>
+&emsp;Miles to Km          <br>
 file.c               <br>
