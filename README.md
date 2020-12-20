@@ -13,6 +13,10 @@ string.c             <br>
 &emsp;left-trim      <br>
 &emsp;right-trim     <br>
 &emsp;trim           <br>
+&emsp;concat two strings<br>
+&emsp;integer to char<br>
+&emsp;float to char  <br>
+&emsp;double to char <br>
 math.c               <br>
 &emsp;addition       <br>
 &emsp;subtraction    <br>
@@ -33,7 +37,5 @@ geometry.c           <br>
 &emsp;volume cylinder<br>
 &emsp;volume sphere  <br>
 converter.c          <br>
-&emsp;integer to char<br>
-&emsp;float to char<br>
-&emsp;double to char<br>
+
 file.c               <br>
