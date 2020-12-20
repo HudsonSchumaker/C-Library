@@ -6,7 +6,7 @@ Common C useful methods.
 &emsp;lowercase      <br>
 &emsp;camelCase      <br>
 &emsp;PascalCase     <br>
-&emsp;CapitalCase    <br>
+&emsp;Capital Case   <br>
 &emsp;snake_case     <br>
 &emsp;kebab-case     <br>
 &emsp;reverse        <br>
