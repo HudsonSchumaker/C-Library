@@ -45,4 +45,6 @@ Common C useful methods.
 &emsp;Fahrenheit to Kelvin <br>
 &emsp;Km to Miles          <br>
 &emsp;Miles to Km          <br>
+&emsp;Knot to Km/h         <br>
+&emsp;Km/h to knot         <br>
 # file.c                   <br>
