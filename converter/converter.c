@@ -65,3 +65,8 @@ float knot_to_km_h(float k) {
 float km_h_to_knot(float km) {
     return km / 1.852;
 }
+
+// Pound per square inch (psi) to bar
+float psi_to_bar(float psi) {
+    return psi / 14.504;
+}
