@@ -24,6 +24,7 @@ Common C useful methods.
 &emsp;division       <br>
 &emsp;increment      <br>
 &emsp;decrement      <br>
+&emsp;fatorial       <br>
 # geometry.c         <br>
 &emsp;area square    <br>
 &emsp;area rectangle <br>
