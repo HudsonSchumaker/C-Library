@@ -46,6 +46,14 @@ int cube_int(int x0) {
     return x0 * x0 * x0;
 }
 
+int Factorial(int n) {
+    int fact = 1;
+    for (int i = n; i > 1; --i) {
+        fact *= i;
+    }
+    return fact;
+}
+
 // Long operatations
 // ADD, SUB, MUL, DIV, INC, DEC
 long add_long(long x0, long x1) {
