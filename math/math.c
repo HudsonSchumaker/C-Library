@@ -86,15 +86,15 @@ float add_float(float d0, float d1) {
     return d0 + d1;
 }
 
-float sub_double(float d0, float d1) {
+float sub_float(float d0, float d1) {
     return d0 - d1;
 }
 
-float mult_double(float d0, float d1) {
+float mult_float(float d0, float d1) {
     return d0 * d1;
 }
 
-float divd(float d0, float d1) {
+float div_float(float d0, float d1) {
     return d0 / d1;
 }
 
@@ -112,6 +112,6 @@ double mult_double(double d0, double d1) {
     return d0 * d1;
 }
 
-double divd(double d0, double d1) {
+double div_double(double d0, double d1) {
     return d0 / d1;
 }
