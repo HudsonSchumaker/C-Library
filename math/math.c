@@ -22,7 +22,7 @@ int sub_int(register int x0, register int x1) {
     return x0 - x1;
 }
 
-int mult_int(int x0, int x1) {
+int mult_int(register int x0, register int x1) {
     return x0 * x1;
 }
 
