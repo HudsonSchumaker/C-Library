@@ -7,7 +7,7 @@
 const double pi = 3.141592;
 
 // Double areas 
-double area_square(double s) {
+double area_square(register double s) {
     // A = s²
     return s * s;
 }
