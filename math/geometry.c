@@ -12,7 +12,7 @@ double area_square(register double s) {
     return s * s;
 }
 
-double area_rectangle(double l, double w) {
+double area_rectangle(register double l, register double w) {
     // A = lw
     return l * w;
 }
