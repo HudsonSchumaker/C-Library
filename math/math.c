@@ -6,7 +6,7 @@
 
 // Interger operations
 // ADD, SUB, MUL, DIV, INC, DEC, POW, CUBE
-int add_int(regiater int x0, regsiter int x1) {
+int add_int(register int x0, register int x1) {
     return x0 + x1;
 }
 
@@ -18,7 +18,7 @@ int add_4_int(int x0, int x1, int x2, int x3) {
     return x0 + x1 + x2 + x3;
 }
 
-int sub_int(int x0, int x1) {
+int sub_int(register int x0, register int x1) {
     return x0 - x1;
 }
 
