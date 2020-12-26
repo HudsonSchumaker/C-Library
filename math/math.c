@@ -30,11 +30,11 @@ int div_int(register int x0, register int x1) {
     return x0 / x1;
 }
 
-int inc_int(int x0) {
+int inc_int(register int x0) {
     return x0++;
 }
 
-int dec_int(int x0) {
+int dec_int(register int x0) {
     return x0--;
 }
 
