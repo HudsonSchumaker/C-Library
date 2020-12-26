@@ -26,7 +26,7 @@ int mult_int(register int x0, register int x1) {
     return x0 * x1;
 }
 
-int div_int(int x0, int x1) {
+int div_int(register int x0, register int x1) {
     return x0 / x1;
 }
 
