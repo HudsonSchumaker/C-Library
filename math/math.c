@@ -10,7 +10,7 @@ int add_int(register int x0, register int x1) {
     return x0 + x1;
 }
 
-int add_3_int(int x0, int x1, int x2) {
+int add_3_int(register int x0, register int x1, register int x2) {
     return x0 + x1 + x2;
 }
 
