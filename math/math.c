@@ -38,11 +38,11 @@ int dec_int(register int x0) {
     return x0--;
 }
 
-int pow_int(int x0) {
+int pow_int(register int x0) {
     return x0 * x0;
 }
 
-int cube_int(int x0) {
+int cube_int(register int x0) {
     return x0 * x0 * x0;
 }
 
