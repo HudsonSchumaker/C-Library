@@ -17,17 +17,17 @@ double area_rectangle(register double l, register double w) {
     return l * w;
 }
 
-double area_triangle(double b, double h) {
+double area_triangle(register double b, register double h) {
     // A = bh / 2
     return (b * h) / 2.0;
 }
 
-double area_parallelogram(double b, double h) {
+double area_parallelogram(register double b, register double h) {
     // A = bh
     return b * h;
 }
 
-double area_trapezoid(double b, double B, double h) {
+double area_trapezoid(register double b, register double B, register double h) {
     // A = (B + b)h / 2
     return ((B + b) * h) / 2;
 }
