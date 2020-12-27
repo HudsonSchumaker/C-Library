@@ -56,7 +56,7 @@ int factorial(register int n) {
 
 // Long operatations
 // ADD, SUB, MUL, DIV, INC, DEC
-long add_long(long x0, long x1) {
+long add_long(register long x0, register long x1) {
     return x0 + x1;
 }
 
