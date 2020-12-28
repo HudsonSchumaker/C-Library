@@ -9,7 +9,6 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
-const char* right_trim(char *str);
 
 void print_string(char *str) {
    printf("%s", str);
