@@ -37,7 +37,7 @@ double area_circle(register double r) {
     return  pi * (r * r);
 }
 
-double area_sphere(double r) {
+double area_sphere(register double r) {
     // A = 4pir²
     return 4 * pi * (r * r);
 }
