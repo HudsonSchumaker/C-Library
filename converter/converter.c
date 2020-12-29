@@ -27,7 +27,7 @@ float celsius_to_kelvin(float c) {
 }
 
 // Kelvin to Celsius
-float kelvin_to_celsius(float k) {
+float kelvin_to_celsius(register float k) {
     // 0K − 273.15 = -273,1°C
     return k - 273.15;
 }
