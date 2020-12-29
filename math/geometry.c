@@ -48,7 +48,7 @@ double volume_cube(register double s) {
     return s * s * s;
 }
 
-double volume_cone(double r, double h) {
+double volume_cone(register double r, register double h) {
     // V = (1/3)pir²h
     return (((1 / 3) * pi) * (r * r)) * h;
 }
