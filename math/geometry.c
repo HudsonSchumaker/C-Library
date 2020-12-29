@@ -43,7 +43,7 @@ double area_sphere(register double r) {
 }
 
 // Double volumes
-double volume_cube(double s) {
+double volume_cube(register double s) {
     // V = s³
     return s * s * s;
 }
