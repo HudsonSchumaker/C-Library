@@ -53,7 +53,7 @@ double volume_cone(register double r, register double h) {
     return (((1 / 3) * pi) * (r * r)) * h;
 }
 
-double volume_cylinder(double r, double h) {
+double volume_cylinder(register double r, register double h) {
     // V = pir²h
     return  pi * (r * r) * h;
 }
