@@ -45,13 +45,13 @@ float fahrenheit_to_kelvin(register float f) {
 }
 
 // Km to Miles
-float km_to_miles(float km) {
+float km_to_miles(register float km) {
     // m = km/1.609
     return km / 1.609;
 }
 
 // Miles to Km
-float mile_to_km(float m) {
+float mile_to_km(register float m) {
     // km = m * 1.609
     return m * 1.609;
 }
