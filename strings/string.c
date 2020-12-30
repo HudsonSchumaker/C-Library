@@ -20,32 +20,32 @@ void print_string_ln(char *str) {
    fflush(stdout);
 }
 
-void print_int(int i) {
+void print_int(register int i) {
    printf("%d", i);
    fflush(stdout);
 }
 
-void print_int_ln(int i) {
+void print_int_ln(register int i) {
    printf("%d\n", i);
    fflush(stdout);
 }
 
-void printf_float(float f) {
+void printf_float(register float f) {
    printf("%lf", f);
    fflush(stdout);
 }
 
-void print_float_ln(float f) {
+void print_float_ln(register float f) {
    printf("%lf\n", f);
    fflush(stdout);
 }
 
-void print_double(double d) {
+void print_double(register double d) {
    printf("%f", d);
    fflush(stdout);
 }
 
-void print_double_ln(double d) {
+void print_double_ln(register double d) {
    printf("%f\n", d);
    fflush(stdout);
 }
