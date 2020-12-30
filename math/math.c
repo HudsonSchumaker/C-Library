@@ -94,17 +94,17 @@ float mult_float(register float d0, register float d1) {
     return d0 * d1;
 }
 
-float div_float(float d0, float d1) {
+float div_float(register float d0, register float d1) {
     return d0 / d1;
 }
 
 // Double operations
 // ADD, SUB, MUL, DIV
-double add_double(double d0, double d1) {
+double add_double(register double d0, register double d1) {
     return d0 + d1;
 }
 
-double sub_double(double d0, double d1) {
+double sub_double(register double d0, register double d1) {
     return d0 - d1;
 }
 
