@@ -60,15 +60,15 @@ long add_long(register long x0, register long x1) {
     return x0 + x1;
 }
 
-long sub_long(long x0, long x1) {
+long sub_long(register long x0, register long x1) {
     return x0 - x1;
 }
 
-long mult_long(long x0, long x1) {
+long mult_long(register long x0, register long x1) {
     return x0 * x1;
 }
 
-long div_long(long x0, long x1) {
+long div_long(register long x0, register long x1) {
     return x0 / x1;
 }
 
