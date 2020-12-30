@@ -58,7 +58,7 @@ double volume_cylinder(register double r, register double h) {
     return  pi * (r * r) * h;
 }
 
-double volume_sphere(double r) {
+double volume_sphere(register double r) {
     // V = 4/3pir³
     return (((4 / 3) * pi) * (r * r * r));
 }
