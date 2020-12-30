@@ -57,7 +57,7 @@ float mile_to_km(register float m) {
 }
 
 // Knot to Km/h
-float knot_to_km_h(float k) {
+float knot_to_km_h(register float k) {
     return k * 1.852;
 }
 
