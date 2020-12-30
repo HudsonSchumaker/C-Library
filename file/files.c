@@ -10,6 +10,8 @@
 //
 
 #include <stdio.h>
+#define READ "r"
+#define WRITE "w"
 #define READ_WRITE "w+"
 
 int create_file(char *path) {
