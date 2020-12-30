@@ -13,11 +13,9 @@
 #define READ_WRITE "w+"
 
 int create_file(char *path) {
-    register int res = 0;
+    register int res = 1;
     FILE *fp;
     fp = fopen(path, READ_WRITE);
-    fclose(fp);
-    res = 1;
+    res = fclose(fp);
     return res;
 }
-
