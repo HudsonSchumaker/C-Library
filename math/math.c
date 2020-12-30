@@ -108,10 +108,10 @@ double sub_double(register double d0, register double d1) {
     return d0 - d1;
 }
 
-double mult_double(double d0, double d1) {
+double mult_double(register double d0, register double d1) {
     return d0 * d1;
 }
 
-double div_double(double d0, double d1) {
+double div_double(register double d0, register double d1) {
     return d0 / d1;
 }
