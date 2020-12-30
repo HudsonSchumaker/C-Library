@@ -10,9 +10,11 @@
 //
 
 #include <stdio.h>
+#define APPEND "a"
 #define READ "r"
 #define WRITE "w"
-#define READ_WRITE "w+"
+#define READ_WRITE "r+"
+#define TRUNC_READ_WRITE "w+"
 
 int create_file(char *path) {
     register int res = 1;
