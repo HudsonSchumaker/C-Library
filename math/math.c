@@ -72,25 +72,25 @@ long div_long(register long x0, register long x1) {
     return x0 / x1;
 }
 
-long inc_long(long x0) {
+long inc_long(register long x0) {
     return x0++;
 }
 
-long dec_long(long x0) {
+long dec_long(register long x0) {
     return x0--;
 }
 
 // Float operatations
 // ADD, SUB, MUL, DIV
-float add_float(float d0, float d1) {
+float add_float(register float d0, register float d1) {
     return d0 + d1;
 }
 
-float sub_float(float d0, float d1) {
+float sub_float(register float d0, register float d1) {
     return d0 - d1;
 }
 
-float mult_float(float d0, float d1) {
+float mult_float(register float d0, register float d1) {
     return d0 * d1;
 }
 
