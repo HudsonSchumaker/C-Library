@@ -51,3 +51,4 @@ Common C useful methods.
 &emsp;psi to bar           <br>
 # file.c                   <br>
 &emsp;create file          <br>
+&emsp;append to file       <br>
