@@ -41,3 +41,7 @@ void append_to_file_2(FILE *f, char *str) {
 void close_file(FILE *f) {
     fclose(f);
 }
+
+int delete_file(FILE *f) {
+   return remove(f);
+}
