@@ -37,3 +37,7 @@ void append_to_file_1(char *f, char *str) {
 void append_to_file_2(FILE *f, char *str) {
     fprintf(f, str);
 }
+
+void close_file(FILE *f) {
+    fclose(f);
+}
