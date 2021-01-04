@@ -52,3 +52,5 @@ Common C useful methods.
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
+&emsp;close file           <br>
+&emsp;delete file          <br>
