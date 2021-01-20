@@ -73,11 +73,11 @@ long div_long(register long x0, register long x1) {
 }
 
 long inc_long(register long x0) {
-    return x0++;
+    return ++x0;
 }
 
 long dec_long(register long x0) {
-    return x0--;
+    return --x0;
 }
 
 // Float operatations
