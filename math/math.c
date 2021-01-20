@@ -31,11 +31,11 @@ int div_int(register int x0, register int x1) {
 }
 
 int inc_int(register int x0) {
-    return x0++;
+    return ++x0;
 }
 
 int dec_int(register int x0) {
-    return x0--;
+    return --x0;
 }
 
 int pow_int(register int x0) {
