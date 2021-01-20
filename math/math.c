@@ -115,3 +115,7 @@ double mult_double(register double d0, register double d1) {
 double div_double(register double d0, register double d1) {
     return d0 / d1;
 }
+
+double calculate_percentage(register double obtained, register double total) {
+        return obtained * 100 / total;
+}
