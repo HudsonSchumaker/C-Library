@@ -14,7 +14,7 @@ int add_3_int(register int x0, register int x1, register int x2) {
     return x0 + x1 + x2;
 }
 
-int add_4_int(int x0, int x1, int x2, int x3) {
+int add_4_int(register int x0, register int x1, register int x2, register int x3) {
     return x0 + x1 + x2 + x3;
 }
 
