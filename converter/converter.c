@@ -70,3 +70,8 @@ float km_h_to_knot(register float km) {
 float psi_to_bar(register float psi) {
     return psi / 14.504;
 }
+
+// Liters to gallons
+float liter_to_gallon(register float l) {
+    return l / 3.785;
+}
