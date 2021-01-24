@@ -75,3 +75,8 @@ float psi_to_bar(register float psi) {
 float liter_to_gallon(register float l) {
     return l / 3.785;
 }
+
+// Gallons to liters
+float gallon_to_liter(register float g) {
+    return g * 3.785;
+}
