@@ -80,3 +80,8 @@ float liter_to_gallon(register float l) {
 float gallon_to_liter(register float g) {
     return g * 3.785;
 }
+
+// Kilogram to pounds
+float kilogram_to_pound(register float k) {
+    return k *  2.205;
+}
