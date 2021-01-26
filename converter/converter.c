@@ -86,6 +86,7 @@ float kilogram_to_pound(register float k) {
     return k * 2.205;
 }
 
+// Pound to kilogram
 float pound_to_kilogram(register float p) {
     return p / 2.205;
 }
