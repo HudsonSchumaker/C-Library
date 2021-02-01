@@ -90,3 +90,8 @@ float kilogram_to_pound(register float k) {
 float pound_to_kilogram(register float p) {
     return p / 2.205;
 }
+
+// Watts to HP
+float watts_to _hp(register w) {
+    return w / 746;
+}
