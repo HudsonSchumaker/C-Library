@@ -51,6 +51,7 @@ Common C useful methods.
 &emsp;PSI to BAR           <br>
 &emsp;BAR to PSI           <br>
 &emsp;Litter to Gallon     <br>
+&emsp;Gallon to Litter     <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
