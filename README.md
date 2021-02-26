@@ -48,7 +48,8 @@ Common C useful methods.
 &emsp;Miles to Km          <br>
 &emsp;Knot to Km/h         <br>
 &emsp;Km/h to knot         <br>
-&emsp;psi to bar           <br>
+&emsp;PSI to BAR           <br>
+&emsp;BAR to PSI           <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
