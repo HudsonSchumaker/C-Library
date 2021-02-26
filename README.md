@@ -50,6 +50,7 @@ Common C useful methods.
 &emsp;Km/h to knot         <br>
 &emsp;PSI to BAR           <br>
 &emsp;BAR to PSI           <br>
+&emsp;Litter to Gallon     <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
