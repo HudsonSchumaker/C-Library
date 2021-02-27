@@ -52,6 +52,7 @@ Common C useful methods.
 &emsp;BAR to PSI           <br>
 &emsp;Litter to Gallon     <br>
 &emsp;Gallon to Litter     <br>
+&emsp;Kilogram to Pounds   <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
