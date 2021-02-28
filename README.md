@@ -53,6 +53,7 @@ Common C useful methods.
 &emsp;Litter to Gallon     <br>
 &emsp;Gallon to Litter     <br>
 &emsp;Kilogram to Pounds   <br>
+&emsp;Pounds to Kilogram   <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
