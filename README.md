@@ -55,6 +55,7 @@ Common C useful methods.
 &emsp;Kilogram to Pounds   <br>
 &emsp;Pounds to Kilogram   <br>
 &emsp;Watts to HP (mechanical horsepower) <br>
+&emsp;HP (mechanical horsepower) to Watts <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
