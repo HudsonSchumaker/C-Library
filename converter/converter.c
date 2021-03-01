@@ -90,6 +90,11 @@ float pound_to_kilogram(register float p) {
 }
 
 // Watts to HP (mechanical horsepower)
-float watts_to_hp(register w) {
+float watts_to_hp(register float w) {
     return w / 746;
+}
+
+// HP (mechanical horsepower) to Watts
+float watts_to_hp(register float hp) {
+    return hp * 746;
 }
