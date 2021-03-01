@@ -54,6 +54,7 @@ Common C useful methods.
 &emsp;Gallon to Litter     <br>
 &emsp;Kilogram to Pounds   <br>
 &emsp;Pounds to Kilogram   <br>
+&emsp;Watts to HP (mechanical horsepower) <br>
 # file.c                   <br>
 &emsp;create file          <br>
 &emsp;append to file       <br>
