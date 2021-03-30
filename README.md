@@ -61,4 +61,4 @@ Can be called by assembler.
 &emsp;create file          <br>
 &emsp;append to file       <br>
 &emsp;close file           <br>
-&emsp;delete file           <br>
+&emsp;delete file          <br>
