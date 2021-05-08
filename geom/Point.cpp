@@ -1,6 +1,6 @@
 //
 //  Point.cpp
-//  hello
+//  SchumakerTeam Lab.
 //
 //  Created by Hudson Luiz Sales Schumaker on 06.05.21.
 //
