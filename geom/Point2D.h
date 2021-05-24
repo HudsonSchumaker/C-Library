@@ -2,7 +2,7 @@
 //  Point2D.h
 //  SchumakerTeam Lab.
 //
-//  Created by Hudson Luiz Sales Schumaker on 06.05.21.
+//  Hudson Schumaker
 //
 
 #ifndef POINT2D_H
