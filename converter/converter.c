@@ -95,6 +95,6 @@ float watts_to_hp(register float w) {
 }
 
 // HP (mechanical horsepower) to Watts
-float watts_to_hp(register float hp) {
+float hp_to_watts(register float hp) {
     return hp * 746;
 }
