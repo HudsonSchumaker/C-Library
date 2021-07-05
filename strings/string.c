@@ -281,7 +281,7 @@ const char* string_concat(char *s1, char *s2) {
 
 // Integer to char array(string)
 const char* int_to_string(int i) {
-    char str[12];// fit all integer numbers.
+    char str[12]; // fit all integer numbers.
     sprintf(str, "%d", i);
     char *buffer = malloc(12);
     strcpy(buffer, str);
