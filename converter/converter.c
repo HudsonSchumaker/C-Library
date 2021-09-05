@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Celsius to Fahrenheit
+// Celsius to Fahrenheit 
 float celsius_to_fahrenheit(register float c) {
     // (0°C × 9/5) + 32 = 32°F
     return (c *(9/5)) + 32.0;
