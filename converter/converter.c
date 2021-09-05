@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
-#include <string.h> 
+#include <string.h>
 
 // Celsius to Fahrenheit
 float celsius_to_fahrenheit(register float c) {
