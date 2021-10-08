@@ -17,7 +17,7 @@ float celsius_to_fahrenheit(register float c) {
 // Fahrenheit to Celsius
 float fahrenheit_to_celsius(register float f) {
     // (32°F − 32) × 5/9 = 0°C
-    return (f - 32.0) * (5/9);
+    return (f - 32.0) * 5/9;
 }
 
 // Celsius to Kelvin
