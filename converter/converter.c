@@ -35,7 +35,7 @@ float kelvin_to_celsius(register float k) {
 // Kelvin to Fahrenheit
 float kelvin_to_fahrenheit(register float k) {
     // (0K − 273.15) × 9/5 + 32 = -459,7°F
-    return ((k - 273.15) * (9/5)) + 32; 
+    return (k - 273.15) * 9/5 + 32; 
 }
 
 // Fahrenheit to Kelvin
