@@ -41,7 +41,7 @@ float kelvin_to_fahrenheit(register float k) {
 // Fahrenheit to Kelvin
 float fahrenheit_to_kelvin(register float f) {
     // (32°F − 32) × 5/9 + 273.15 = 273,15K
-    return ((f - 32) * (5/9)) + 273.15;
+    return (f - 32) * 5/9 + 273.15;
 }
 
 // Km to Miles
