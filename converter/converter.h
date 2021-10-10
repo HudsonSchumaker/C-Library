@@ -1,3 +1,8 @@
+//  O3 Ozone Project Lab
+//  converter.h
+//  Created by Hudson Schumaker
+
+
 #ifndef CONV_H
 #define CONV_H
 
