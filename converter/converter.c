@@ -20,7 +20,7 @@ float fahrenheit_to_celsius(register float f) {
     return (f - 32.0) * 5/9;
 }
 
-// Celsius to Kelvin
+// Celsius to Kelvin 
 float celsius_to_kelvin(register float c) {
     // 0°C + 273.15 = 273,15K
     return c + 273.15;
