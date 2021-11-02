@@ -42,7 +42,7 @@ float area_sphere(register float r) {
     return 4 * pi * (r * r);
 }
 
-// Double volumes
+// volumes
 float volume_cube(register float s) {
     // V = s³
     return s * s * s;
@@ -53,7 +53,7 @@ float volume_cone(register float r, register float h) {
     return (((1 / 3) * pi) * (r * r)) * h;
 }
 
-double volume_cylinder(register double r, register double h) {
+float volume_cylinder(register float r, register float h) {
     // V = pir²h
     return  pi * (r * r) * h;
 }
