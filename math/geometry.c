@@ -32,7 +32,7 @@ float area_trapezoid(register float b, register float B, register float h) {
     return ((B + b) * h) / 2;
 }
 
-double area_circle(register double r) {
+float area_circle(register float r) {
     // A = pi * r²
     return  pi * (r * r);
 }
