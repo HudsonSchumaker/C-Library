@@ -3,7 +3,7 @@
 //  Created by Hudson Schumaker
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
-#ifndef CONV_H
+#ifndef CONVERTER_H
 #define CONV_H
 
 float celsius_to_fahrenheit(register float c);
