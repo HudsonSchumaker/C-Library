@@ -7,12 +7,12 @@
 const float pi = 3.141592f;
 
 // Double areas 
-float area_square(register flaot s) {
+float area_square(register float s) {
     // A = s²
     return s * s;
 }
 
-double area_rectangle(register double l, register double w) {
+float area_rectangle(register float l, register float w) {
     // A = lw
     return l * w;
 }
