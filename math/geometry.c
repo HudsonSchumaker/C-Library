@@ -48,7 +48,7 @@ float volume_cube(register float s) {
     return s * s * s;
 }
 
-double volume_cone(register double r, register double h) {
+float volume_cone(register float r, register float h) {
     // V = (1/3)pir²h
     return (((1 / 3) * pi) * (r * r)) * h;
 }
