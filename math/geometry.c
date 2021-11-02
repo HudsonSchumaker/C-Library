@@ -22,7 +22,7 @@ float area_triangle(register float b, register float h) {
     return (b * h) / 2.0;
 }
 
-double area_parallelogram(register double b, register double h) {
+float area_parallelogram(register float b, register float h) {
     // A = bh
     return b * h;
 }
