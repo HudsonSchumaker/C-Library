@@ -4,10 +4,10 @@
 //  Created by Hudson Schumaker on 16.08.04.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
-const double pi = 3.141592;
+const float pi = 3.141592f;
 
 // Double areas 
-double area_square(register double s) {
+float area_square(register flaot s) {
     // A = s²
     return s * s;
 }
