@@ -27,7 +27,7 @@ float area_parallelogram(register float b, register float h) {
     return b * h;
 }
 
-double area_trapezoid(register double b, register double B, register double h) {
+float area_trapezoid(register float b, register float B, register float h) {
     // A = (B + b)h / 2
     return ((B + b) * h) / 2;
 }
