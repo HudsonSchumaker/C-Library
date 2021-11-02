@@ -43,7 +43,7 @@ float area_sphere(register float r) {
 }
 
 // Double volumes
-double volume_cube(register double s) {
+float volume_cube(register float s) {
     // V = s³
     return s * s * s;
 }
