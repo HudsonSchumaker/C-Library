@@ -6,7 +6,7 @@
 
 const float pi = 3.141592f;
 
-// Double areas 
+// areas 
 float area_square(register float s) {
     // A = s²
     return s * s;
