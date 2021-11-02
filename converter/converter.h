@@ -4,7 +4,7 @@
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
 #ifndef CONVERTER_H
-#define CONV_H
+#define CONVERTER_H
 
 float celsius_to_fahrenheit(register float c);
 float fahrenheit_to_celsius(register float f);
