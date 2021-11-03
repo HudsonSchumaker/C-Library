@@ -1,9 +1,6 @@
-//
 //  Point.h
 //  SchumakerTeam Lab.
-//
 //  Hudson Schumaker
-//
 
 #ifndef POINT_H
 #define POINT_H
