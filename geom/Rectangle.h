@@ -1,6 +1,6 @@
 //  Dimension.h
 //  A Rectangle specifies an area in a coordinate space that is enclosed by the Rectangle object's 
-//  upper-left point (x,y) in the coordinate space, its width, and its height.
+//  upper-left point (x, y) in the coordinate space, its width, and its height.
 //  SchumakerTeam Lab.
 //  Hudson Schumaker
 //
