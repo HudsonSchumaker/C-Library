@@ -4,6 +4,7 @@
 //  SchumakerTeam Lab.
 //  Hudson Schumaker
 //
+
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
@@ -13,8 +14,8 @@
 #include "Dimension.h"
 
 using namespace std;
-class Rectangle
-{
+
+class Rectangle {
 private:
 	int x;
 	int y;
