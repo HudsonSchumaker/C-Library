@@ -1,9 +1,6 @@
-//
 //  Dimension.h
 //  SchumakerTeam Lab.
-//
 //  Hudson Schumaker
-//
 
 #ifndef DIMENSION_H
 #define DIMENSION_H
