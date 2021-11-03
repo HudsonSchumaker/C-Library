@@ -20,7 +20,7 @@ public:
     Point(int x, int y);
     
     void move(int x, int y);
-	  void translate(int d);
+    void translate(int d);
     void translate(int dx, int dy);
     
     void setX(int x) { this->x = x; };
