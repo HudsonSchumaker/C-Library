@@ -1,9 +1,6 @@
-//
 //  Point.cpp
 //  SchumakerTeam Lab.
-//
 //  Hudson Schumaker
-//
 
 #include "Point.h"
 
