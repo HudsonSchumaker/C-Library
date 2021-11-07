@@ -3,8 +3,4 @@
 //  Created by Hudson Schumaker
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
-
-
-
-
 #ifndef CONVERTER_H
