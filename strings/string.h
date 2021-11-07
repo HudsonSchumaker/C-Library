@@ -1,5 +1,5 @@
 //  O3 Ozone Project Lab
-//  converter.h
+//  string.h
 //  Created by Hudson Schumaker
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
