@@ -1,6 +1,6 @@
 //  Dimension.cpp
 //  SchumakerTeam Lab.
-//  Hudson Schumaker 
+//  Hudson Schumaker
 
 #include "Dimension.h"
 
