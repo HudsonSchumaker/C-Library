@@ -4,6 +4,5 @@
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
 #ifndef CONVERTER_H
-
 #define CONVERTER_H
 
