@@ -6,4 +6,6 @@
 #ifndef CONVERTER_H
 #define CONVERTER_H
 
+void print_string(char *str);
+
 #endif
