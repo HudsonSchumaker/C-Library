@@ -7,5 +7,6 @@
 #define CONVERTER_H
 
 void print_string(char *str);
+void print_string_ln(char *str);
 
 #endif
