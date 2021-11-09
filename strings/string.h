@@ -11,5 +11,6 @@ void print_string_ln(char *str);
 void print_int(register int i);
 void print_int_ln(register int i);
 void printf_float(register float f);
+void print_float_ln(register float f);
 
 #endif
