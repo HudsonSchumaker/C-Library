@@ -13,5 +13,6 @@ void print_int_ln(register int i);
 void printf_float(register float f);
 void print_float_ln(register float f);
 void print_double(register double d);
+void print_double_ln(register double d);
 
 #endif
