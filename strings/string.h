@@ -15,5 +15,6 @@ void print_float_ln(register float f);
 void print_double(register double d);
 void print_double_ln(register double d);
 const char* upper_case(char *str);
+const char* lower_case(char *str);
 
 #endif
