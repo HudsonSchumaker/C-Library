@@ -22,5 +22,6 @@ const char* capital_case(char *str);
 const char* snake_case(char *str);
 const char* kebab_case(char *str);
 const char* reverse_case(char *str);
+const char* left_trim(char *str);
 
 #endif
