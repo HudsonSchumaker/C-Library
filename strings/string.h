@@ -18,5 +18,6 @@ const char* upper_case(char *str);
 const char* lower_case(char *str);
 const char* camel_case(char *str);
 const char* pascal_case(char *str);
+const char* capital_case(char *str);
 
 #endif
