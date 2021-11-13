@@ -299,7 +299,7 @@ const char* float_to_string(float f) {
     sprintf(istr, "%d", ipart);
     
     if (afterpoint != 0) { 
-        fpart = fpart * pow(10, afterpoint); 
+        // fpart = fpart * pow(10, afterpoint); 
     }
     
     int fpart_no_dot = fpart;
