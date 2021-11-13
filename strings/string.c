@@ -323,7 +323,7 @@ const char* double_to_string(double d) {
     sprintf(istr, "%d", ipart);
     
     if (afterpoint != 0) { 
-        dpart = dpart * pow(10, afterpoint); 
+       // dpart = dpart * pow(10, afterpoint); 
     }
     
     int dpart_no_dot = dpart;
