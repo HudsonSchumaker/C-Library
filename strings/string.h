@@ -24,5 +24,6 @@ const char* kebab_case(char *str);
 const char* reverse_case(char *str);
 const char* left_trim(char *str);
 const char* trim(char *str);
+const char* int_to_string(int i);
 
 #endif
