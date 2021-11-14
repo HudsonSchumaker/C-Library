@@ -291,25 +291,10 @@ const char* int_to_string(int i) {
 
 // Float to char array(string)
 const char* float_to_string(float f) {
-    int afterpoint = 4;
-    int ipart = (int)f;               // extract integer part 
-    float fpart = f - (float)ipart;   // extract float part 
-    
-    char istr[8];
-    sprintf(istr, "%d", ipart);
-    
-    if (afterpoint != 0) { 
-        // fpart = fpart * pow(10, afterpoint); 
-    }
-    
-    int fpart_no_dot = fpart;
-    char fstr[8];
-    sprintf(fstr, "%d", fpart_no_dot);
-   
-    char *buffer = malloc(16);
-    strcpy(buffer, istr);
-    strcat(buffer, ".");
-    strcat(buffer, fstr);
+    char b[12];
+    sprintf(b, "%g", f);
+    char *buffer = malloc(12);
+    strcpy(buffer, b);
     return buffer;
 }
 
