@@ -300,24 +300,9 @@ const char* float_to_string(float f) {
 
 // Double to char array(string)
 const char* double_to_string(double d) {
-    int afterpoint = 6;
-    int ipart = (int)d;                 // extract integer part 
-    double dpart = d - (double)ipart;   // extract double part 
-    
-    char istr[8];
-    sprintf(istr, "%d", ipart);
-    
-    if (afterpoint != 0) { 
-       // dpart = dpart * pow(10, afterpoint); 
-    }
-    
-    int dpart_no_dot = dpart;
-    char dstr[8];
-    sprintf(dstr, "%d", dpart_no_dot);
-   
-    char *buffer = malloc(16);
-    strcpy(buffer, istr);
-    strcat(buffer, ".");
-    strcat(buffer, dstr);
+    char b[50];
+    snprintf(b, 50, "%f", d);
+    char *buffer = malloc(12);
+    strcpy(buffer, b);
     return buffer;
 }
