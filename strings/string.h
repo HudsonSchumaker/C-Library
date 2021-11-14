@@ -26,5 +26,6 @@ const char* left_trim(char *str);
 const char* trim(char *str);
 const char* int_to_string(int i);
 const char* float_to_string(float f);
+const char* float_to_string(float f);
 
 #endif
