@@ -38,15 +38,15 @@ float kelvin_to_fahrenheit(register float k) {
     return (k - 273.15) * 9/5 + 32; 
 }
 
-// Metres to Kilometres
-float metres_to_kilometres(register float m) {
-    return m / 1000.0f;
-}
-
 // Fahrenheit to Kelvin
 float fahrenheit_to_kelvin(register float f) {
     // (32°F − 32) × 5/9 + 273.15 = 273,15K
     return (f - 32) * 5/9 + 273.15;
+}
+
+// Metres to Kilometres
+float metres_to_kilometres(register float m) {
+    return m / 1000.0f;
 }
 
 // Km to Miles
