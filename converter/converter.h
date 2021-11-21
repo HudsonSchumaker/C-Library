@@ -13,6 +13,7 @@ float kelvin_to_celsius(register float k);
 float kelvin_to_fahrenheit(register float k); 
 float fahrenheit_to_kelvin(register float f); 
 float metres_to_kilometres(register float m);
+float kilometres_to_metres(register float k);
 float km_to_miles(register float km);
 float mile_to_km(register float m); 
 float knot_to_km_h(register float k); 
