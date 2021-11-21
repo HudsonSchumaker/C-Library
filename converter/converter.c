@@ -39,7 +39,7 @@ float kelvin_to_fahrenheit(register float k) {
 }
 
 float metres_to_kilometres(register float m) {
-    
+    return m / 1000.0f;
 }
 
 // Fahrenheit to Kelvin
