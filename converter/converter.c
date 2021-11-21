@@ -38,6 +38,7 @@ float kelvin_to_fahrenheit(register float k) {
     return (k - 273.15) * 9/5 + 32; 
 }
 
+// Metres to Kilometres
 float metres_to_kilometres(register float m) {
     return m / 1000.0f;
 }
