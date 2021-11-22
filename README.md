@@ -45,6 +45,7 @@ Can be called by assembler.
 &emsp;Kelvin to Celsius    <br>
 &emsp;Kelvin to Fahrenheit <br>
 &emsp;Fahrenheit to Kelvin <br>
+&emsp;Metres to Km         <br>
 &emsp;Km to Miles          <br>
 &emsp;Miles to Km          <br>
 &emsp;Knot to Km/h         <br>
