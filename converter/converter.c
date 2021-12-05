@@ -75,7 +75,7 @@ float km_h_to_knot(register float km) {
 }
 
 // Miles to Knots
-float miles_to_knots(register float m) {
+float miles_to_knot(register float m) {
     return k /  1.151;
 }
     
