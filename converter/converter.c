@@ -60,7 +60,7 @@ float km_to_mile(register float km) {
 }
 
 // Miles to Km
-float mile_to_km(register float m) {
+float mile_to_km_h(register float m) {
     return m * 1.609;
 }
 
