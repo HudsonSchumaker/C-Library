@@ -55,7 +55,7 @@ float kilometres_to_metres(register float k) {
 }
 
 // Km to Miles
-float km_to_miles(register float km) {
+float km_to_mile(register float km) {
     return km / 1.609;
 }
 
