@@ -1,5 +1,5 @@
 //  O3 Ozone Project Lab
-//  files.c -  create methods 
+//  files.c -  create methods
 //             read methods
 //             write methods
 //             close methods
