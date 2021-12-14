@@ -1,4 +1,4 @@
-//  O3 Ozone Project Lab 
+//  O3 Ozone Project Lab
 //  string.c - print methods
 //             string methods
 //             int to string
