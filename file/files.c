@@ -26,6 +26,7 @@ void append_to_file_1(char *f, char *str) {
     FILE *fp;
     fp = fopen(f, APPEND);
     fprintf(fp, str);
+    close_file(fp);
 }
 
 void append_to_file_2(FILE *f, char *str) {
