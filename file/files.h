@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// have to declare this definition to user the functions as "override" functions 
 #define append_to_file(f, str) _Generic(f, char*:append_to_file_1 , FILE*: append_to_file_2)(f, str)
 
 FILE* create_file(char *path);
