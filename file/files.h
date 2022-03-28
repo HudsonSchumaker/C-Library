@@ -3,6 +3,11 @@
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 //
 
+#include <stdio.h>
+#include <stdlib.h>
+
+#define append_to_file(f, str) _Generic(f, char*:append_to_file_1 , FILE*: append_to_file_2)(f, str)
+
 FILE* create_file(char *path);
 void append_to_file_1(char *f, char *str);
 void append_to_file_2(FILE *f, char *str);
