@@ -8,9 +8,6 @@
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
-
 #define APPEND "a"
 #define READ "r"
 #define WRITE "w"
