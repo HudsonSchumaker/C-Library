@@ -3,6 +3,9 @@
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 //
 
+#ifndef file_h
+#define file_h
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,3 +16,5 @@ void append_to_file_1(char *f, char *str);
 void append_to_file_2(FILE *f, char *str);
 void close_file(FILE *f);
 int delete_file(FILE *f);
+
+#endif /* file_h */
