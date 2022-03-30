@@ -4,6 +4,8 @@
 //  Created by Hudson Schumaker on 16.08.04.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
+#include "geometry.h"
+
 const float pi = 3.141592f;
 
 // areas 
