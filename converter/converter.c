@@ -3,6 +3,8 @@
 //  Created by Hudson Schumaker on 14.08.20.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 
+#include "converter.h"
+
 // Celsius to Fahrenheit
 float celsius_to_fahrenheit(register float c) {
     // (0°C × 9/5) + 32 = 32°F
