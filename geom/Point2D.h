@@ -21,6 +21,8 @@ private:
 public:
 	Point2D();
 	Point2D(double x, double y);
+	
+	Point2D cartesian2Isometric(Point2D cartesian);
 
 	void move(double x, double y);
 	void translate(double d);
