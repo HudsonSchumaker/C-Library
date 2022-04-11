@@ -17,6 +17,13 @@ Point2D::Point2D(double x, double y) {
 	this->y = y;
 }
 
+Point2D Point2D::Point2D(Point2D cartesian) {
+	Point2D isometric;
+	isometric.setX(cartesian.getX() - cartesian.getY());
+	isometric.setY((cartesian.getX() + cartesian.geY()) / 2);
+	return isometric;
+}
+
 void Point2D::move(double x, double y) {
 	this->x = x;
 	this->y = y;
