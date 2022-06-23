@@ -41,7 +41,7 @@ float area_circle(register float r) {
 
 float area_sphere(register float r) {
     // A = 4pir²
-    return 4 * pi * (r * r);
+    return 4.0f * pi * (r * r);
 }
 
 // volumes
