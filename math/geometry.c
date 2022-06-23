@@ -52,7 +52,7 @@ float volume_cube(register float s) {
 
 float volume_cone(register float r, register float h) {
     // V = (1/3)pir²h
-    return (((1.0f / 3) * pi) * (r * r)) * h;
+    return (((1.0f / 3.0f) * pi) * (r * r)) * h;
 }
 
 float volume_cylinder(register float r, register float h) {
