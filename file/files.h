@@ -1,4 +1,4 @@
-//  O3 Ozone Project Lab
+//  O3 Ozone Project Lab.
 //  Created by Hudson Schumaker on 14.08.20.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
 //
