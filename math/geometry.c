@@ -31,7 +31,7 @@ float area_parallelogram(register float b, register float h) {
 
 float area_trapezoid(register float b, register float B, register float h) {
     // A = (B + b)h / 2
-    return ((B + b) * h) / 2;
+    return ((B + b) * h) / 2.0f;
 }
 
 float area_circle(register float r) {
