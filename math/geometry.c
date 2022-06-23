@@ -21,7 +21,7 @@ float area_rectangle(register float l, register float w) {
 
 float area_triangle(register float b, register float h) {
     // A = bh / 2
-    return (b * h) / 2.0;
+    return (b * h) / 2.0f;
 }
 
 float area_parallelogram(register float b, register float h) {
