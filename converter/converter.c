@@ -2,7 +2,7 @@
 //  converter.c
 //  Created by Hudson Schumaker on 14.08.20.
 //  Copyright © 2020 SchumakerTeam. All rights reserved.
-// 
+//
 
 #include "converter.h"
 
