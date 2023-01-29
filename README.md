@@ -1,4 +1,4 @@
-# C-Library
+# C-Library 
 Common C useful methods.
 Can be called by assembler.
 
@@ -44,7 +44,7 @@ Can be called by assembler.
 &emsp;Celsius to Kelvin    <br>
 &emsp;Kelvin to Celsius    <br>
 &emsp;Kelvin to Fahrenheit <br>
-&emsp;Fahrenheit to Kelvin <br>
+&emsp;Fahrenheit to Kelvin <br> 
 &emsp;Metres to Km         <br>
 &emsp;Km to Miles          <br>
 &emsp;Miles to Km          <br>
