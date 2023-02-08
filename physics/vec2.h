@@ -2,8 +2,7 @@
 #define VEC2_H
 
 typedef struct {
-    float x;
-    float y;
+    float x, y;
 } vec2_t;
 
 float vec2_magnitude(vec2_t v);
