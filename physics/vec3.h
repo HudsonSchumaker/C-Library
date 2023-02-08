@@ -5,7 +5,7 @@ typedef struct {
     float x, y, z;
 } vec3_t;
 
-float vec3_length(vec3_t v);
+float vec3_maginitude(vec3_t v);
 vec3_t vec3_add(vec3_t a, vec3_t b);
 vec3_t vec3_sub(vec3_t a, vec3_t b);
 vec3_t vec3_mul(vec3_t v, float factor);
