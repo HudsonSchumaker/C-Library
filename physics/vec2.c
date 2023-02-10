@@ -28,3 +28,11 @@ vec2_t vec2_mul(vec2_t v, float factor) {
     };
     return result;
 }
+
+vec2_t vec2_div(vec2_t v, float factor) {
+    vec2_t result = {
+        .x = v.x / factor,
+        .y = v.y / factor
+    };
+    return result;
+}
