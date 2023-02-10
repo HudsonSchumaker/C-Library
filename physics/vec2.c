@@ -36,3 +36,7 @@ vec2_t vec2_div(vec2_t v, float factor) {
     };
     return result;
 }
+
+float vec2_dot(vec2_t a, vec2_t b) {
+    return (a.x * b.x) + (a.y * b.y);
+}
