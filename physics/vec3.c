@@ -12,3 +12,12 @@ vec3_t vec3_add(vec3_t a, vec3_t b) {
     };
     return result;
 }
+
+vec3_t vec3_sub(vec3_t a, vec3_t b) {
+    vec3_t result = {
+        .x = a.x - b.x,
+        .y = a.y - b.y,
+        .z = a.z - b.z
+    };
+    return result;
+}
