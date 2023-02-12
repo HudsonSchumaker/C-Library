@@ -15,6 +15,6 @@ vec3_t vec3_cross(vec3_t a, vec3_t b);
 void vec3_normalize(vec3_t* v);
 vec3_t vec3_rotate_x(vec3_t v, float angle);
 vec3_t vec3_rotate_y(vec3_t v, float angle);
-
+vec3_t vec3_rotate_z(vec3_t v, float angle);
 
 #endif
