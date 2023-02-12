@@ -30,3 +30,12 @@ vec3_t vec3_mul(vec3_t v, float factor) {
     };
     return result;
 }
+
+vec3_t vec3_div(vec3_t v, float factor) {
+    vec3_t result = {
+        .x = v.x / factor,
+        .y = v.y / factor,
+        .z = v.z / factor
+    };
+    return result;
+}
