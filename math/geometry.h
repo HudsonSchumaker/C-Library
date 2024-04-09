@@ -17,5 +17,10 @@ float volume_cube(register float s);
 float volume_cone(register float r, register float h);
 float volume_cylinder(register float r, register float h);
 float volume_sphere(register float r);
+float area_ellipse(register float a, register float b);
+float area_sector(register float r, register float angle);
+float volume_rectangular_prism(register float l, register float w, register float h);
+float volume_pyramid(register float b, register float h);
+float volume_torus(register float r, register float R);
 
 #endif

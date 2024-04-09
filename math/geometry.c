@@ -6,6 +6,7 @@
 //
 
 #include "geometry.h"
+#include <math.h>
 
 const float pi = 3.141592f;
 
@@ -36,12 +37,12 @@ float area_trapezoid(register float b, register float B, register float h) {
 }
 
 float area_circle(register float r) {
-    // A = pi * r²
+    // A = π * r²
     return  pi * (r * r);
 }
 
 float area_sphere(register float r) {
-    // A = 4pir²
+    // A = 4πr²
     return 4.0f * pi * (r * r);
 }
 
@@ -52,16 +53,41 @@ float volume_cube(register float s) {
 }
 
 float volume_cone(register float r, register float h) {
-    // V = (1/3)pir²h
+    // V = (1/3)πr²h
     return (((1.0f / 3.0f) * pi) * (r * r)) * h;
 }
 
 float volume_cylinder(register float r, register float h) {
-    // V = pir²h
+    // V = πr²h
     return  pi * (r * r) * h;
 }
 
 float volume_sphere(register float r) {
-    // V = 4/3pir³
+    // V = 4/3πr³
     return (((4.0f / 3.0f) * pi) * (r * r * r));
+}
+
+float area_ellipse(float a, float b) {
+    //  A = πab
+    return pi * a * b;
+}
+
+float area_sector(float r, float angle) {
+    // A = 1/2 * r² * θ
+    return 0.5f * r * r * angle;
+}
+
+float volume_rectangular_prism(float l, float w, float h) {
+    // V = lwh
+    return l * w * h;
+}
+
+float volume_pyramid(float b, float h) {
+    // V = Bh/3
+    return (b * h) / 3.0f;
+}
+
+float volume_torus(float r, float R) {
+    // V = 2π²Rr²
+    return 2.0f * pi * pi * R * r * r;
 }
