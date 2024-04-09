@@ -19,6 +19,7 @@ float km_to_miles(register float km);
 float mile_to_km(register float m);
 float knot_to_km_h(register float k);
 float km_h_to_knot(register float km);
+float miles_to_knot(register float k); 
 float psi_to_bar(register float p);
 float bar_to_psi(register float b);
 float liter_to_gallon(register float l);
