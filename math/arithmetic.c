@@ -26,3 +26,29 @@ float lcm(register float n1, register float n2) {
     lcm = (n1 * n2) / gcd;
     return lcm;
 }
+
+bool isPowerOfTwo(int n) {
+    return n > 0 && (n & (n - 1)) == 0;
+}
+
+float distanceBetweenPoints(float x1, float y1, float x2, float y2) {
+    // using the euclidean distance formula
+    return sqrtf((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+}
+
+float normalizeAngle(float angle) {
+    angle = remainder(angle, TWO_PI);
+    if (angle < 0) {
+        angle = TWO_PI + angle;
+    }
+    return angle;
+}
+
+
+float deg2Rad(float angle) {
+    return angle * PI / 180.0f;
+}
+
+float rad2Deg(float angle) {
+    return angle * 180.0f / PI;
+}
