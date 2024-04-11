@@ -31,9 +31,16 @@ bool isPowerOfTwo(int n) {
     return n > 0 && (n & (n - 1)) == 0;
 }
 
-float distanceBetweenPoints(float x1, float y1, float x2, float y2) {
-    // using the euclidean distance formula
+float euclideanDistance(float x1, float y1, float x2, float y2) {
     return sqrtf((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+}
+
+float manhattanDistance(float x1, float y1, float x2, float y2) {
+   return abs(x2 - x1) + abs(y2 - y1);
+}
+
+float chebyshevDistance(float x1, float y1, float x2, float y2) {
+   return max(abs(x2 - x1), abs(y2 - y1));
 }
 
 float normalizeAngle(float angle) {
