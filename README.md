@@ -27,6 +27,7 @@ Can be called by assembler.
 &emsp;decrement      <br>
 &emsp;fatorial       <br>
 &emsp;vec2           <br>
+&emsp;vec3           <br>
 # geometry.c         <br>
 &emsp;area square    <br>
 &emsp;area rectangle <br>
