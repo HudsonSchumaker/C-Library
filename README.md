@@ -28,6 +28,7 @@ Can be called by assembler.
 &emsp;fatorial       <br>
 &emsp;vec2           <br>
 &emsp;vec3           <br>
+&emsp;vec4           <br>
 # geometry.c         <br>
 &emsp;area square    <br>
 &emsp;area rectangle <br>
