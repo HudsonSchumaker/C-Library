@@ -1,6 +1,6 @@
 # C-Library
 Common C useful methods.
-Can be called by assembler. 
+Can be called by assembler.
 
 # string.c           <br>
 &emsp;UPPERCASE      <br>
