@@ -29,6 +29,7 @@ Can be called by assembler.
 &emsp;vec2           <br>
 &emsp;vec3           <br>
 &emsp;vec4           <br>
+&emsp;matrix         <br>
 # geometry.c         <br>
 &emsp;area square    <br>
 &emsp;area rectangle <br>
