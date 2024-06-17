@@ -1,5 +1,5 @@
 # C-Library
-Common C useful methods.
+Common C useful methods. 
 Can be called by assembler.
 
 # string.c           <br>
