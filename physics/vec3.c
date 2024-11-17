@@ -30,8 +30,8 @@ vec3_t vec3_div(vec3_t* v, float s) {
 }
 
 vec3_t vec3_rotate_x(vec3_t* v, float angle) {
-    float cos_angle = cos(angle);
-    float sin_angle = sin(angle);
+    float cos_angle = cosf(angle);
+    float sin_angle = sinf(angle);
 
     vec3_t rotated_vector = {
         .x = v->x,
@@ -42,8 +42,8 @@ vec3_t vec3_rotate_x(vec3_t* v, float angle) {
 }
 
 vec3_t vec3_rotate_y(vec3_t* v, float angle) {
-    float cos_angle = cos(angle);
-    float sin_angle = sin(angle);
+    float cos_angle = cosf(angle);
+    float sin_angle = sinf(angle);
 
     vec3_t rotated_vector = {
         .x = v->x * cos_angle + v->z * sin_angle,
@@ -54,8 +54,8 @@ vec3_t vec3_rotate_y(vec3_t* v, float angle) {
 }
 
 vec3_t vec3_rotate_z(vec3_t* v, float angle) {
-    float cos_angle = cos(angle);
-    float sin_angle = sin(angle);
+    float cos_angle = cosf(angle);
+    float sin_angle = sinf(angle);
 
     vec3_t rotated_vector = {
         .x = v->x * cos_angle - v->y * sin_angle,
@@ -109,7 +109,7 @@ vec3_t vec3_cross(vec3_t* a, vec3_t* b) {
 }
 
 float vec3_magnitude(vec3_t* v) {
-    return sqrt(v->x * v->x + v->y * v->y + v->z * v->z);
+    return sqrtf(v->x * v->x + v->y * v->y + v->z * v->z);
 }
 
 float vec3_magnitude_squared(vec3_t* v) {

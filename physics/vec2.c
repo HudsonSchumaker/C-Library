@@ -29,7 +29,7 @@ vec2_t vec2_div(vec2_t* v, float s) {
 }
 
 vec2_t vec2_rotate(vec2_t* v, float angle) {
-    return vec2_new(v->x * cos(angle) - v->y * sin(angle), v->x * sin(angle) + v->y * cos(angle));
+    return vec2_new(v->x * cosf(angle) - v->y * sinf(angle), v->x * sinf(angle) + v->y * cosf(angle));
 }
 
 vec2_t vec2_normal(vec2_t* v) {
