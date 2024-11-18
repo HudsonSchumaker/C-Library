@@ -137,3 +137,11 @@ mat4_t mat4_look_at(vec3_t* eye, vec3_t* target, vec3_t* up) {
     }};
     return view_matrix;
 }
+
+void mat4_to_array(mat4_t* mat, float* array) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            array[i * 4 + j] = mat->m[i][j];
+        }
+    }
+}
