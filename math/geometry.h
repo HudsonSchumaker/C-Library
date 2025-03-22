@@ -1,7 +1,7 @@
 //  O3 Ozone Project Lab
 //  geometry.h - areas, volumes
 //  Created by Hudson Schumaker on 16.08.04.
-//  Copyright © 2020 SchumakerTeam. All rights reserved.
+//  Copyright © 2020 SchumakerTeam. All rights reserved. 
 
 #ifndef GEOMETRY_H
 #define GEOMETRY_H
