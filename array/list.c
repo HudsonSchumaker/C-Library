@@ -40,6 +40,14 @@ void* list_get(list_t* list, size_t index) {
 	return NULL;
 }
 
+void list_sort(list_t* list, int (*comparator)(const void*, const void*)) {
+    if (list == NULL || list->value == NULL || list->size <= 1) {
+        return; // Nothing to sort
+    }
+
+    qsort(list->value, list->size, list->type_size, comparator);
+}
+
 size_t list_size(list_t* list) {
 	return list->size;
 }
