@@ -18,4 +18,4 @@ void append_to_file_2(FILE* f, char* str);
 void close_file(FILE* f);
 int delete_file(FILE* f);
 
-#endif /* file_h */
+#endif
