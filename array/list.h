@@ -1,5 +1,11 @@
-#ifndef LIST_H
-#define LIST_H
+/**
+* @file list.h
+* @brief Header file for a dynamic list implementation in C. 
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
+#pragma once
 
 typedef struct {
 	void* value;
@@ -15,5 +21,3 @@ void* list_get(list_t* list, size_t index);
 void list_sort(list_t* list, int (*comparator)(const void*, const void*));
 size_t list_size(list_t* list);
 void list_free(list_t* list);
-
-#endif

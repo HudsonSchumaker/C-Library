@@ -1,4 +1,11 @@
-# include "list.h"
+/**
+* @file list.c
+* @brief Implementation of a dynamic list in C.
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
+#include "list.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>

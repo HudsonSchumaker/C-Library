@@ -1,20 +1,16 @@
-//  O3 Ozone Project Lab
-//  files.c -  create methods
-//             read methods
-//             write methods
-//             close methods
-//             delete methods
-//  Created by Hudson Schumaker on 14.08.20.
-//  Copyright © 2020 SchumakerTeam. All rights reserved. 
-//
-
+/**
+* @file files.c
+* @brief Implementation of file handling functions in C.
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
 #define APPEND "a"
 #define READ "r"
 #define WRITE "w"
 #define READ_WRITE "r+"
 #define TRUNC_READ_WRITE "w+"
 #define APP_READ_WRITE "a+"
-
 
 FILE* create_file(char* path) {
     FILE* fp;

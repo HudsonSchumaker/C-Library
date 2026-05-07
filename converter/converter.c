@@ -1,9 +1,10 @@
-//  O3 Ozone Project Lab
-//  converter.c
-//  Created by Hudson Schumaker on 14.08.20.
-//  Copyright © 2020 SchumakerTeam. All rights reserved.
-//
-
+/**
+* @file converter.c
+* @brief Implementation of various unit conversion functions in C.
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
 #include "converter.h"
 
 // Celsius to Fahrenheit
@@ -115,4 +116,3 @@ float watts_to_hp(register float w) {
 float hp_to_watts(register float h) {
     return h * 746.0f;
 }
-

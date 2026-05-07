@@ -1,3 +1,10 @@
+/**
+* @file array.c
+* @brief Implementation of a dynamic array in C.
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
 #include "array.h"
 #include <stdio.h>
 #include <stdlib.h>

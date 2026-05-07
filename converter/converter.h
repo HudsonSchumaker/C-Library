@@ -1,11 +1,11 @@
-//  O3 Ozone Project Lab
-//  converter.h
-//  Created by Hudson Schumaker
-//  Copyright © 2020 SchumakerTeam. All rights reserved.
-//
-
-#ifndef CONVERTER_H
-#define CONVERTER_H
+/**
+* @file converter.h
+* @brief Header file for various unit conversion functions in C.
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
+#pragma once
 
 float celsius_to_fahrenheit(register float c);
 float fahrenheit_to_celsius(register float f);
@@ -28,5 +28,3 @@ float kilogram_to_pound(register float k);
 float pound_to_kilogram(register float p);
 float watts_to_hp(register float w);
 float hp_to_watts(register float h);
-
-#endif

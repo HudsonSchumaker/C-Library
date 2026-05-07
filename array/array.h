@@ -1,5 +1,11 @@
-#ifndef ARRAY_H
-#define ARRAY_H
+/**
+* @file array.h
+* @brief Header file for a dynamic array implementation in C. 
+* @author Hudson Schumaker
+* @version 1.0.0
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
+#pragma once
 
 #define array_push(array, value)                                              \
     do {                                                                      \
@@ -10,5 +16,3 @@
 void* array_hold(void* array, int count, int item_size);
 int array_length(void* array);
 void array_free(void* array);
-
-#endif
