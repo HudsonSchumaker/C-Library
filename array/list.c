@@ -63,4 +63,5 @@ void list_free(list_t* list) {
 	list->value = NULL;
 	list->size = 0;
 	list->capacity = 0;
+	list->type_size = 0;
 }
