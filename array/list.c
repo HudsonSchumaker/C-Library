@@ -6,10 +6,6 @@
 * @copyright Copyright (c) 2024, Dodoi-Lab
 */
 #include "list.h"
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <string.h>
 
 void list_init(list_t* list, size_t type_size) {
 	list->size = 0;
