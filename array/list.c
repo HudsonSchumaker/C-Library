@@ -29,7 +29,7 @@ bool list_resize(list_t* list, size_t new_capacity) {
     return true;
 }
 
-bool list_push_back(list_t* list, void* value) {
+bool list_push_back(list_t* list, const void* value) {
 	if (list->size == list->capacity && !list_resize(list, list->capacity * 2)) {
         return false; // out of memory, entry was not added
     }
@@ -39,14 +39,14 @@ bool list_push_back(list_t* list, void* value) {
     return true;
 }
 
-void* list_get(list_t* list, size_t index) {
+void* list_get(const list_t* list, size_t index) {
 	if (index < list->size) {
 		return (char*)list->value + index * list->type_size;
 	}
 	return NULL;
 }
 
-void list_sort(list_t* list, int (*comparator)(const void*, const void*)) {
+void list_sort(const list_t* list, int (*comparator)(const void*, const void*)) {
     if (list == NULL || list->value == NULL || list->size <= 1) {
         return; // Nothing to sort
     }
@@ -54,7 +54,7 @@ void list_sort(list_t* list, int (*comparator)(const void*, const void*)) {
     qsort(list->value, list->size, list->type_size, comparator);
 }
 
-size_t list_size(list_t* list) {
+size_t list_size(const list_t* list) {
 	return list->size;
 }
 
