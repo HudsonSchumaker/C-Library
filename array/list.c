@@ -33,12 +33,14 @@ bool list_resize(list_t* list, size_t new_capacity) {
     return true;
 }
 
-void list_push_back(list_t* list, void* value) {
-	if (list->size == list->capacity) {
-		list_resize(list, list->capacity * 2);
-	}
+bool list_push_back(list_t* list, void* value) {
+	if (list->size == list->capacity && !list_resize(list, list->capacity * 2)) {
+        return false; // out of memory, entry was not added
+    }
+    
 	memcpy((char*)list->value + list->size * list->type_size, value, list->type_size);
-	list->size++;
+    list->size++;
+    return true;
 }
 
 void* list_get(list_t* list, size_t index) {
