@@ -6,6 +6,11 @@
 * @copyright Copyright (c) 2024, Dodoi-Lab
 */
 #pragma once
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
 
 typedef struct {
 	void* value;
@@ -15,8 +20,8 @@ typedef struct {
 } list_t;
 
 void list_init(list_t* list, size_t type_size);
-void list_resize(list_t* list, size_t new_capacity);
-void list_push_back(list_t* list, void* value);
+bool list_resize(list_t* list, size_t new_capacity);
+bool list_push_back(list_t* list, void* value);
 void* list_get(list_t* list, size_t index);
 void list_sort(list_t* list, int (*comparator)(const void*, const void*));
 size_t list_size(list_t* list);
