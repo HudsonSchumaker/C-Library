@@ -18,18 +18,19 @@ void list_init(list_t* list, size_t type_size) {
 	list->value = malloc(list->capacity * list->type_size);
 }
 
-void list_resize(list_t* list, size_t new_capacity) {
-	if (new_capacity > list->capacity) {
-		void* new_value = realloc(list->value, new_capacity * list->type_size);
-		if (new_value) {
-			list->value = new_value;
-			list->capacity = new_capacity;
-			fprintf(stdout, "Memory reallocation success\n");
-		}
-		else {
-			fprintf(stderr, "Memory reallocation failed\n");
-		}
-	}
+bool list_resize(list_t* list, size_t new_capacity) {
+	if (new_capacity <= list->capacity) {
+        return true;
+    }
+    
+	void* new_value = realloc(list->value, new_capacity * list->type_size);
+    if (!new_value) {
+        return false;
+    }
+    
+	list->value = new_value;
+    list->capacity = new_capacity;
+    return true;
 }
 
 void list_push_back(list_t* list, void* value) {
