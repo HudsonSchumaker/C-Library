@@ -82,4 +82,3 @@ vec3_t vec2_to_vec3(vec2_t* v) {
 vec4_t vec2_to_vec4(vec2_t* v) {
     return vec4_new(v->x, v->y, 0.0f, 1.0f);
 }
-

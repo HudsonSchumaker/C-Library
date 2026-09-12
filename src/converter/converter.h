@@ -5,7 +5,8 @@
 * @version 1.0.0
 * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef CONVERTER_H
+#define CONVERTER_H
 
 float celsius_to_fahrenheit(register float c);
 float fahrenheit_to_celsius(register float f);
@@ -28,3 +29,5 @@ float kilogram_to_pound(register float k);
 float pound_to_kilogram(register float p);
 float watts_to_hp(register float w);
 float hp_to_watts(register float h);
+
+#endif /* CONVERTER_H */

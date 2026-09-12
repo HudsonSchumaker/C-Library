@@ -20,3 +20,6 @@ vec2_t vec4_to_vec2(vec4_t* v) {
 vec3_t vec4_to_vec3(vec4_t* v) {
     return vec3_new(v->x, v->y, v->z);
 }
+
+
+

@@ -12,96 +12,117 @@
 #include <stdlib.h>
 #include <string.h>
 
-void print_string(char *str) {
-   printf("%s", str);
-   fflush(stdout);
+void print_string(char *str)
+{
+    printf("%s", str);
+    fflush(stdout);
 }
 
-void print_string_ln(char *str) {
-   printf("%s\n", str);
-   fflush(stdout);
+void print_string_ln(char *str)
+{
+    printf("%s\n", str);
+    fflush(stdout);
 }
 
-void print_int(register int i) {
-   printf("%d", i);
-   fflush(stdout);
+void print_int(register int i)
+{
+    printf("%d", i);
+    fflush(stdout);
 }
 
-void print_int_ln(register int i) {
-   printf("%d\n", i);
-   fflush(stdout);
+void print_int_ln(register int i)
+{
+    printf("%d\n", i);
+    fflush(stdout);
 }
 
-void printf_float(register float f) {
-   printf("%lf", f);
-   fflush(stdout);
+void printf_float(register float f)
+{
+    printf("%lf", f);
+    fflush(stdout);
 }
 
-void print_float_ln(register float f) {
-   printf("%lf\n", f);
-   fflush(stdout);
+void print_float_ln(register float f)
+{
+    printf("%lf\n", f);
+    fflush(stdout);
 }
 
-void print_double(register double d) {
-   printf("%f", d);
-   fflush(stdout);
+void print_double(register double d)
+{
+    printf("%f", d);
+    fflush(stdout);
 }
 
-void print_double_ln(register double d) {
-   printf("%f\n", d);
-   fflush(stdout);
+void print_double_ln(register double d)
+{
+    printf("%f\n", d);
+    fflush(stdout);
 }
 
 // UPPERCASE
-const char* upper_case(char *str) {
+const char *upper_case(char *str)
+{
     int i = 0;
     long len = strlen(str);
-    char strUpper[len];
+    char *strUpper = malloc((len + 1) * sizeof(char));
 
-    while(str[i]) {
-       strUpper[i] = toupper(str[i]);
-       i++;
+    while (str[i])
+    {
+        strUpper[i] = toupper(str[i]);
+        i++;
     }
     char *buffer = malloc(len);
     strcpy(buffer, strUpper);
+    free(strUpper);
     return buffer;
 }
 
 // lowercase
-const char* lower_case(char *str) {
+const char *lower_case(char *str)
+{
     int i = 0;
     long len = strlen(str);
-    char strLower[len];
+    char *strLower = malloc((len + 1) * sizeof(char));
 
-    while(str[i]) {
-       strLower[i] = tolower(str[i]);
-       i++;
+    while (str[i])
+    {
+        strLower[i] = tolower(str[i]);
+        i++;
     }
     char *buffer = malloc(len);
     strcpy(buffer, strLower);
+    free(strLower);
     return buffer;
 }
 
 // camelCase
-const char* camel_case(char *str) {
+const char *camel_case(char *str)
+{
     long len = strlen(str);
-    char strCapitalLetters[len];
+    char *strCapitalLetters = malloc((len + 1) * sizeof(char));
     strCapitalLetters[0] = tolower(str[0]);
 
     int i = 1;
-    while (str[i]) {
-        if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
+    while (str[i])
+    {
+        if (str[i - 1] == ' ' || str[i - 1] == '_' || str[i - 1] == '-')
+        {
             strCapitalLetters[i] = toupper(str[i]);
-        } else {
+        }
+        else
+        {
             strCapitalLetters[i] = tolower(str[i]);
         }
         i++;
     }
 
     int writer = 0, reader = 0;
-    char strCamel[len];
-    while (strCapitalLetters[reader]) {
-        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-') {
+    char *strCamel = malloc((len + 1) * sizeof(char));
+    while (strCapitalLetters[reader])
+    {
+        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-')
+        {
             strCamel[writer++] = strCapitalLetters[reader];
         }
         reader++;
@@ -109,20 +130,27 @@ const char* camel_case(char *str) {
     strCamel[writer] = 0;
     char *buffer = malloc(len);
     strcpy(buffer, strCamel);
+    free(strCapitalLetters);
+    free(strCamel);
     return buffer;
 }
 
 // PascalCase
-const char* pascal_case(char *str) {
+const char *pascal_case(char *str)
+{
     long ini_len = strlen(str);
-    char strCapitalLetters[ini_len];
+    char *strCapitalLetters = malloc((ini_len + 1) * sizeof(char));
     strCapitalLetters[0] = toupper(str[0]);
 
     int i = 1;
-    while (str[i]) {
-        if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
+    while (str[i])
+    {
+        if (str[i - 1] == ' ' || str[i - 1] == '_' || str[i - 1] == '-')
+        {
             strCapitalLetters[i] = toupper(str[i]);
-        } else {
+        }
+        else
+        {
             strCapitalLetters[i] = tolower(str[i]);
         }
         i++;
@@ -130,19 +158,24 @@ const char* pascal_case(char *str) {
 
     i = 0;
     long remove = 0;
-    while (strCapitalLetters[i]) {
-        if (strCapitalLetters[i] == ' ' || strCapitalLetters[i] == '_' || strCapitalLetters[i] == '-') {
+    while (strCapitalLetters[i])
+    {
+        if (strCapitalLetters[i] == ' ' || strCapitalLetters[i] == '_' || strCapitalLetters[i] == '-')
+        {
             remove++;
         }
         i++;
     }
 
     long len = ini_len - remove;
-    char strPascal[len];
+    char *strPascal = malloc((len + 1) * sizeof(char));
     int writer = 0, reader = 0;
-    while (strCapitalLetters[reader]) {
-        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-') {
-            if (writer < len) {
+    while (strCapitalLetters[reader])
+    {
+        if (strCapitalLetters[reader] != ' ' && strCapitalLetters[reader] != '_' && strCapitalLetters[reader] != '-')
+        {
+            if (writer < len)
+            {
                 strPascal[writer++] = strCapitalLetters[reader];
             }
         }
@@ -152,75 +185,97 @@ const char* pascal_case(char *str) {
     strPascal[writer] = 0;
     char *buffer = malloc(len);
     strcpy(buffer, strPascal);
+    free(strCapitalLetters);
+    free(strPascal);
     return buffer;
 }
 
 // Capital Case
-const char* capital_case(char *str) {
+const char *capital_case(char *str)
+{
     long len = strlen(str);
-    char strCapitalLetters[len];
+    char *strCapitalLetters = malloc((len + 1) * sizeof(char));
     strCapitalLetters[0] = toupper(str[0]);
 
     int i = 1;
-    do {
-        if (str[i-1] == ' ' || str[i-1] == '_' || str[i-1] == '-') {
+    do
+    {
+        if (str[i - 1] == ' ' || str[i - 1] == '_' || str[i - 1] == '-')
+        {
             strCapitalLetters[i] = toupper(str[i]);
-        } else {
+        }
+        else
+        {
             strCapitalLetters[i] = tolower(str[i]);
         }
         i++;
-    } while (i < len+1);
+    } while (i < len + 1);
 
     long new_len = strlen(strCapitalLetters);
     char *buffer = malloc(new_len);
     strcpy(buffer, strCapitalLetters);
+    free(strCapitalLetters);
     return buffer;
 }
 
 // snake_case
-const char* snake_case(char *str) {
+const char *snake_case(char *str)
+{
     int i = 0;
     long len = strlen(str);
-    char strSnake[len];
+    char *strSnake = malloc((len + 1) * sizeof(char));
 
-    while(str[i]) {
-        if (str[i] == ' ' || str[i] == '-') {
+    while (str[i])
+    {
+        if (str[i] == ' ' || str[i] == '-')
+        {
             strSnake[i] = '_';
-        } else {
+        }
+        else
+        {
             strSnake[i] = str[i];
         }
         i++;
     }
     char *buffer = malloc(len);
     strcpy(buffer, strSnake);
+    free(strSnake);
     return buffer;
 }
 
 // kebab-case
-const char* kebab_case(char *str) {
+const char *kebab_case(char *str)
+{
     int i = 0;
     long len = strlen(str);
-    char strKebab[len];
-    while(str[i]) {
-        if (str[i] == ' ' || str[i] == '_') {
+    char *strKebab = malloc((len + 1) * sizeof(char));
+    while (str[i])
+    {
+        if (str[i] == ' ' || str[i] == '_')
+        {
             strKebab[i] = '-';
-        } else {
+        }
+        else
+        {
             strKebab[i] = str[i];
         }
         i++;
     }
     char *buffer = malloc(len);
     strcpy(buffer, strKebab);
+    free(strKebab);
     return buffer;
 }
 
 // reverse
-const char* reverse_case(char *str) {
+const char *reverse_case(char *str)
+{
     long len = strlen(str);
-    char reverse[len];
+    char *reverse = malloc((len + 1) * sizeof(char));
     int strIndex = 0;
     int revIndex = len - 1;
-    while(strIndex >= 0) {
+    while (strIndex >= 0)
+    {
         reverse[revIndex] = str[strIndex];
         strIndex--;
         revIndex++;
@@ -228,25 +283,30 @@ const char* reverse_case(char *str) {
     reverse[revIndex] = '\0';
     char *buffer = malloc(len);
     strcpy(buffer, reverse);
+    free(reverse);
     return buffer;
 }
 
 // l-trim
-const char* left_trim(char *str) {
-   while(isspace(*str)) str++;
-   long len = strlen(str);
+const char *left_trim(char *str)
+{
+    while (isspace(*str))
+        str++;
+    long len = strlen(str);
 
-   char *buffer = malloc(len);
-   strcpy(buffer, str);
-   return buffer;
+    char *buffer = malloc(len);
+    strcpy(buffer, str);
+    return buffer;
 }
 
 // r-trim
-const char* right_trim(char *str) {
+const char *right_trim(char *str)
+{
     long len = strlen(str);
-    char* back = str + len;
-    while(isspace(*--back));
-    *(back+1) = '\0';
+    char *back = str + len;
+    while (isspace(*--back))
+        ;
+    *(back + 1) = '\0';
 
     char *buffer = malloc(len);
     strcpy(buffer, str);
@@ -254,12 +314,15 @@ const char* right_trim(char *str) {
 }
 
 // trim
-const char* trim(char *str) {
-    while(isspace(*str)) str++;
+const char *trim(char *str)
+{
+    while (isspace(*str))
+        str++;
     long len = strlen(str);
-    char* back = str + len;
-    while(isspace(*--back));
-    *(back+1) = '\0';
+    char *back = str + len;
+    while (isspace(*--back))
+        ;
+    *(back + 1) = '\0';
 
     long len_trim = strlen(str);
     char *buffer = malloc(len_trim);
@@ -268,19 +331,22 @@ const char* trim(char *str) {
 }
 
 // concat two strings (chars arrays)
-const char* string_concat(char *s1, char *s2) {
+const char *string_concat(char *s1, char *s2)
+{
     long len = strlen(s1) + strlen(s2);
-    char buf[len];
+    char *buf = malloc((len + 1) * sizeof(char));
 
     snprintf(buf, sizeof buf, "%s%s", s1, s2);
 
     char *buffer = malloc(len);
     strcpy(buffer, buf);
+    free(buf);
     return buffer;
 }
 
 // Integer to char array(string)
-const char* int_to_string(int i) {
+const char *int_to_string(int i)
+{
     char str[12]; // fit all integer numbers.
     sprintf(str, "%d", i);
     char *buffer = malloc(12);
@@ -289,7 +355,8 @@ const char* int_to_string(int i) {
 }
 
 // Float to char array(string)
-const char* float_to_string(float f) {
+const char *float_to_string(float f)
+{
     char b[12];
     sprintf(b, "%g", f);
     char *buffer = malloc(12);
@@ -298,7 +365,8 @@ const char* float_to_string(float f) {
 }
 
 // Double to char array(string)
-const char* double_to_string(double d) {
+const char *double_to_string(double d)
+{
     char b[50];
     snprintf(b, 50, "%f", d);
     char *buffer = malloc(12);
