@@ -103,17 +103,40 @@ mat4_t mat4_mul_mat4(mat4_t* a, mat4_t* b) {
     return m;
 }
 
-mat4_t mat4_make_perspective(float fov, float aspect, float znear, float zfar) {
-    // | (h/w)*1/tan(fov/2)             0              0                 0 |
-    // |                  0  1/tan(fov/2)              0                 0 |
-    // |                  0             0     zf/(zf-zn)  (-zf*zn)/(zf-zn) |
-    // |                  0             0              1                 0 |
-    mat4_t m = {{{ 0 }}};
-    m.m[0][0] = aspect * (1 / tanf(fov / 2));
-    m.m[1][1] = 1 / tanf(fov / 2);
-    m.m[2][2] = zfar / (zfar - znear);
-    m.m[2][3] = (-zfar * znear) / (zfar - znear);
-    m.m[3][2] = 1.0;
+mat4_t mat4_perspective(const float fov, const float aspect, const float znear, const float zfar) {
+    // | 1/tan(fov/2)/aspect      0                  0                    0        |
+    // |        0            1/tan(fov/2)            0                    0        |
+    // |        0                 0        -(zf+zn)/(zf-zn)  -(2*zf*zn)/(zf-zn)    |
+    // |        0                 0               -1                      0        |
+
+    const float ctanFov = 1.0f / tanf(fov * 0.5f);
+    const float xScale = ctanFov / aspect;
+    const float yScale = ctanFov;
+    const float zDiff = zfar - znear;
+
+    mat4_t m = { {{ 0.0f }} };
+    m.m[0][0] = xScale;
+    m.m[1][1] = yScale;
+    m.m[2][2] = -(zfar + znear) / zDiff;
+    m.m[2][3] = -(2.0f * zfar * znear) / zDiff;
+    m.m[3][2] = -1.0f;
+    return m;
+}
+
+mat4_t mat4_orthographic(const float left, const float right, const float bottom, const float top, const float z_near, const float z_far) {
+    // | 2/(r-l)    0        0    -(r+l)/(r-l) |
+    // |    0     2/(t-b)    0    -(t+b)/(t-b) |
+    // |    0       0    -2/(f-n) -(f+n)/(f-n) |
+    // |    0       0        0          1      |
+	float far_minus_near = z_far - z_near;
+    mat4_t m = { {{ 0.0f }} };
+    m.m[0][0] = 2.0f / (right - left);
+    m.m[1][1] = 2.0f / (top - bottom);
+    m.m[2][2] = -2.0f / far_minus_near;
+    m.m[0][3] = -(right + left) / (right - left);
+    m.m[1][3] = -(top + bottom) / (top - bottom);
+    m.m[2][3] = -(z_far + z_near) / far_minus_near;
+    m.m[3][3] = 1.0f;
     return m;
 }
 
@@ -141,7 +164,7 @@ mat4_t mat4_look_at(vec3_t* eye, vec3_t* target, vec3_t* up) {
 void mat4_to_array(mat4_t* mat, float* array) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            array[i * 4 + j] = mat->m[i][j];
+            array[i * 4 + j] = mat->m[i][j]; // column-major order
         }
     }
 }
